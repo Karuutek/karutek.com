@@ -1,5 +1,5 @@
 import React from 'react';
-import { LitteraProvider } from 'react-littera';
+import { LitteraProvider } from '@assembless/react-littera';
 import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider, useMediaQuery, CssBaseline } from '@material-ui/core';
 

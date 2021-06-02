@@ -1,12 +1,16 @@
 // Deps scoped imports.
 import React from "react";
-import { makeStyles, Container } from "@material-ui/core";
-import { useLittera } from "react-littera";
+import { makeStyles, Container, Typography, Box } from "@material-ui/core";
+import { useLittera } from "@assembless/react-littera";
 import cx from "classnames";
 
 // Project scoped imports.
+
+// Component scoped imports.
 import styles from "./styles";
 import translations from "./trans";
+
+import Hero from './sections/Hero/';
 
 /**
  * Home component
@@ -19,7 +23,7 @@ const Home = (props: ComponentProps) => {
     const classes = useStyles();
 
     return <Container maxWidth="sm" className={cx(classes.root, props.className)} style={props.style}>
-        <h4 className={classes.h4}>{translated.title}</h4>
+        <Hero />
     </Container>
 }
 

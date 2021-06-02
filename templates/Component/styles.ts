@@ -1,12 +1,21 @@
-import { createStyles } from "@material-ui/core/styles";
+import { createStyles, Theme } from '@material-ui/core/styles';
 // Here we define styles for the component.
 
-export default ((theme: any) => createStyles({
+const styles = (theme: Theme) =>
+  createStyles({
     root: {
-        // Container styles...
+      backgroundColor: theme.palette.background.default,
     },
-    h4: {
-        // Head text styles...
-        color: theme.palette.primary
+    title: {
+      marginBottom: theme.spacing(4),
+    },
+
+    /** Mobile view */
+    [theme.breakpoints.down("sm")]: {
+      title: {
+        marginBottom: theme.spacing(2),
+      }
     }
-}));
+  });
+
+export default styles;

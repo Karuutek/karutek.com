@@ -5,8 +5,37 @@ export const LIGHT_THEME = createMuiTheme({
     palette: {
         type: "light",
         primary: {
-            main: "#99CC66"
+            main: "#598F80"
+        },
+        background: {
+            default: "#F3F3F3",
+            paper: "#F3F3F3",
         }
+    },
+    typography: {
+        fontFamily: "'Quicksand', sans-serif"
+    },
+    overrides: {
+        MuiTypography: {
+            paragraph: {
+                fontFamily: "'Quicksand', sans-serif"
+            },
+            h5: {
+                fontFamily: "'Quicksand', sans-serif"
+            },
+            h4: {
+                fontFamily: "'Quicksand', sans-serif"
+            },
+            h3: {
+                fontFamily: "'Quicksand', sans-serif"
+            },
+            h2: {
+                fontFamily: "'Josefin Sans', sans-serif"
+            },
+            h1: {
+                fontFamily: "'Josefin Sans', sans-serif"
+            },
+        },
     }
 });
 
@@ -14,7 +43,7 @@ export const DARK_THEME = createMuiTheme({
     palette: {
         type: "dark",
         primary: {
-            main: "#99CC66"
+            main: "#598F80"
         }
     }
 });
