@@ -21,19 +21,24 @@ export const LIGHT_THEME = createMuiTheme({
                 fontFamily: "'Quicksand', sans-serif"
             },
             h5: {
-                fontFamily: "'Quicksand', sans-serif"
+                fontFamily: "'Quicksand', sans-serif",
+                fontWeight: 600
             },
             h4: {
-                fontFamily: "'Quicksand', sans-serif"
+                fontFamily: "'Quicksand', sans-serif",
+                fontWeight: 600
             },
             h3: {
-                fontFamily: "'Quicksand', sans-serif"
+                fontFamily: "'Quicksand', sans-serif",
+                fontWeight: 600
             },
             h2: {
-                fontFamily: "'Josefin Sans', sans-serif"
+                fontFamily: "'Josefin Sans', sans-serif",
+                fontWeight: 600
             },
             h1: {
-                fontFamily: "'Josefin Sans', sans-serif"
+                fontFamily: "'Josefin Sans', sans-serif",
+                fontWeight: 600
             },
         },
     }
