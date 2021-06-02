@@ -11,6 +11,7 @@ import styles from "./styles";
 import translations from "./trans";
 
 import Hero from './sections/Hero/';
+import About from './sections/About/';
 
 /**
  * Home component
@@ -24,6 +25,7 @@ const Home = (props: ComponentProps) => {
 
     return <Container maxWidth="sm" className={cx(classes.root, props.className)} style={props.style}>
         <Hero />
+        <About />
     </Container>
 }
 

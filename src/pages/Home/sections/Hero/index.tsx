@@ -37,7 +37,7 @@ const Hero = (props: HeroProps) => {
 
         <Box display="flex" justifyContent="center">
             <Box style={{marginRight: -100}}>
-                <Typography variant="h1" color="primary">Karolina<br/>Falkowska</Typography>
+                <Typography variant="h3" component="h1" color="primary">Karolina<br/>Falkowska</Typography>
             </Box>
             <Box style={{ borderRadius: "410px", minWidth: "410px", minHeight: "410px", backgroundColor: "#598F80", mixBlendMode: "difference" }}>
                 <img src={photoPicture} />
