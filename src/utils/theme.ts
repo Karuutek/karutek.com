@@ -38,8 +38,8 @@ export const LIGHT_THEME = createMuiTheme({
                   '&.Mui-focused fieldset': {
                     borderColor: '#598F80',
                     borderWidth: 2
-                  },
-            }
+                  }
+            },
         },
         MuiPaper: {
             elevation24: {

@@ -4,6 +4,7 @@ import { makeStyles, Box, Typography, TextField, Button } from '@material-ui/cor
 import { useLittera } from '@assembless/react-littera';
 import cx from 'classnames';
 import { useForm } from "react-hook-form";
+import ReCAPTCHA from "react-google-recaptcha";
 import * as emailjs from 'emailjs-com'
 
 // Project scoped imports.
@@ -26,10 +27,17 @@ const Contact = ({ className, style }: ContactProps): JSX.Element => {
   const { register, handleSubmit, reset } = useForm();
   const [errors, setErrors] = useState("");
   const [success, setSuccess] = useState(false);
+  const [recaptcha, setRecaptcha] = useState<string | null>(null);
   const translated = useLittera(translations);
   const classes = useStyles();
 
+  const onRecaptchaChange = (token: string | null) => {
+    setRecaptcha(token);
+  }
+
   const onSubmit = async (data: { name: string, email: string, message: string }) => {
+    if(!recaptcha) return;
+
     setSuccess(false);
     setErrors("");
     const { name, email, message } = data;
@@ -94,6 +102,12 @@ const Contact = ({ className, style }: ContactProps): JSX.Element => {
               <Alert severity="success" >Thanks for getting in touch with me. I will answer as soon as I can.</Alert></>}
           </Box>
 
+          <br />
+          <br />
+          <ReCAPTCHA
+            sitekey="6LeS8wobAAAAAArXzLXbdginHBn1MwwSlczcF9gq"
+            onChange={onRecaptchaChange}
+          />
           <br />
           <br />
           <Button variant="contained" color="primary" size="large" type="submit">{translated.submit}</Button>
