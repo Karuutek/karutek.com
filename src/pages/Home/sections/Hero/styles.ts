@@ -4,7 +4,7 @@ import { createStyles } from "@material-ui/core/styles";
 export default ((theme: any) => createStyles({
     root: {
         height: "100vh",
-        paddingTop: 64
+        paddingTop: 55,
     },
     logo: {
         fontWeight: 600,
@@ -13,6 +13,25 @@ export default ((theme: any) => createStyles({
         fontSize: 42,
         color: theme.palette.primary.main,
         textAlign: "center",
-        marginBottom: "47px"
-    }
+        marginBottom: 25,
+    },
+
+
+
+    img: {
+        width: 410,
+        height: 410,
+    },
+
+    imgContainer: {
+        background: `linear-gradient(transparent 10%, ${theme.palette.background.default} )`,
+        position: 'absolute',
+        bottom: 0,
+        zIndex: 300,
+
+        /* transform: 'translate(0,50%)', */
+
+        width: '100%',
+        height: 60,
+    },
 }));
