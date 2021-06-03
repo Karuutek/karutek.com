@@ -12,10 +12,40 @@ export const LIGHT_THEME = createMuiTheme({
             paper: "#F3F3F3",
         }
     },
+    shape: {
+        borderRadius: 6,
+    },
     typography: {
         fontFamily: "'Quicksand', sans-serif"
     },
     overrides: {
+        MuiInputLabel: {
+            focused: {
+                color: "#598F80",
+                fontWeight: "bold"
+            },
+        },
+        MuiOutlinedInput: {
+            root: {
+                '& fieldset': {
+                    borderColor: '#598F80',
+                    borderWidth: 2
+                  },
+                  '&:hover fieldset': {
+                    borderColor: '#598F80',
+                    borderWidth: 2
+                  },
+                  '&.Mui-focused fieldset': {
+                    borderColor: '#598F80',
+                    borderWidth: 2
+                  }
+            },
+        },
+        MuiPaper: {
+            elevation24: {
+                boxShadow: "0px 11px 15px -7px rgb(0 0 0 / 5%), 0px 24px 38px 3px rgb(0 0 0 / 8%), 0px 9px 46px 8px rgb(0 0 0 / 7%)"
+            }
+        },
         MuiTypography: {
             paragraph: {
                 fontFamily: "'Quicksand', sans-serif"
