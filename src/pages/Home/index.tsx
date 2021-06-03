@@ -12,6 +12,7 @@ import translations from "./trans";
 
 import Hero from './sections/Hero/';
 import About from './sections/About/';
+import Contact from './sections/Contact/';
 
 /**
  * Home component
@@ -23,9 +24,10 @@ const Home = (props: ComponentProps) => {
     const translated = useLittera(translations);
     const classes = useStyles();
 
-    return <Container maxWidth="sm" className={cx(classes.root, props.className)} style={props.style}>
+    return <Container maxWidth="md" className={cx(classes.root, props.className)} style={props.style}>
         <Hero />
         <About />
+        <Contact />
     </Container>
 }
 
