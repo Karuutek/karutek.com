@@ -4,15 +4,13 @@ import { createStyles, Theme } from '@material-ui/core/styles';
 const styles = (theme: Theme) =>
   createStyles({
     root: {
+      backgroundColor: theme.palette.background.default,
       height: "100vh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center"
     },
     title: {
-      marginBottom: theme.spacing(4),
+      marginBottom: "54px",
+      textAlign: "center",
     },
-    contactCard: { alignSelf: "flex-end", paddingLeft: "10%", backgroundColor: theme.palette.background.default, borderRadius: theme.shape.borderRadius, padding: theme.spacing(2) },
 
     /** Mobile view */
     [theme.breakpoints.down("sm")]: {

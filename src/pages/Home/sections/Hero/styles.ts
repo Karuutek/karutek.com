@@ -5,6 +5,7 @@ export default ((theme: any) => createStyles({
     root: {
         height: "100vh",
         paddingTop: 55,
+        position: "relative"
     },
     logo: {
         fontWeight: 600,
