@@ -16,6 +16,7 @@ import FlavaLogo from '../../../../assets/flava_logo.png'
 import styles from './styles';
 import translations from './trans';
 import PhysiomedicaProject from './comps/physiomedica/';
+import GiventProject from './comps/givent/';
 
 // Creates a hook for generating classnames.
 const useStyles = makeStyles(styles);
@@ -58,7 +59,7 @@ const Projects = ({ className, style }: ProjectsProps): JSX.Element => {
 
 const PROJECTS_LIST = Object.freeze([
   { id: "physiomedica",   name: "Physiomedica", color: "#80CBC4", logo: "https://i.imgur.com/3XnTTLW.png",    comp: <PhysiomedicaProject /> },
-  { id: "givent",         name: "Givent",       color: "#353642", logo: GiventLogo,                           comp: <PhysiomedicaProject /> },
+  { id: "givent",         name: "Givent",       color: "#353642", logo: GiventLogo,                           comp: <GiventProject /> },
   { id: "assembless",     name: "Assembless",   color: "#000",    logo: AssemblessLogo,                       comp: <PhysiomedicaProject /> },
   { id: "flava",          name: "Flava",        color: "#FFF",    logo: FlavaLogo,                            comp: <PhysiomedicaProject /> },
   { id: "macrents",       name: "MacRents",     color: "#212121", logo: MacrentsLogo,                         comp: <PhysiomedicaProject /> },
