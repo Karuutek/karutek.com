@@ -1,26 +1,40 @@
 {
   "files": {
-    "main.js": "/static/js/main.ccb4f99a.chunk.js",
-    "main.js.map": "/static/js/main.ccb4f99a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f4ede070.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f4ede070.js.map",
-    "static/js/2.1fa27768.chunk.js": "/static/js/2.1fa27768.chunk.js",
-    "static/js/2.1fa27768.chunk.js.map": "/static/js/2.1fa27768.chunk.js.map",
-    "static/js/3.448c19c7.chunk.js": "/static/js/3.448c19c7.chunk.js",
-    "static/js/3.448c19c7.chunk.js.map": "/static/js/3.448c19c7.chunk.js.map",
+    "main.js": "/static/js/main.52474c89.chunk.js",
+    "main.js.map": "/static/js/main.52474c89.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.56e5b90a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.56e5b90a.js.map",
+    "static/js/2.9c97eb75.chunk.js": "/static/js/2.9c97eb75.chunk.js",
+    "static/js/2.9c97eb75.chunk.js.map": "/static/js/2.9c97eb75.chunk.js.map",
+    "static/js/3.76d08c0c.chunk.js": "/static/js/3.76d08c0c.chunk.js",
+    "static/js/3.76d08c0c.chunk.js.map": "/static/js/3.76d08c0c.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.1fa27768.chunk.js.LICENSE.txt": "/static/js/2.1fa27768.chunk.js.LICENSE.txt",
+    "static/js/2.9c97eb75.chunk.js.LICENSE.txt": "/static/js/2.9c97eb75.chunk.js.LICENSE.txt",
     "static/media/106993419_4489704961099888_1937973486739651086_n-removebg-preview.162f0a5d.png": "/static/media/106993419_4489704961099888_1937973486739651086_n-removebg-preview.162f0a5d.png",
     "static/media/1639__0000s_0002_F_2 1.436b6626.png": "/static/media/1639__0000s_0002_F_2 1.436b6626.png",
     "static/media/1639__0000s_0003_F_3 1.dbbefba5.png": "/static/media/1639__0000s_0003_F_3 1.dbbefba5.png",
     "static/media/1639__0000s_0007_F_7 1.1144ddb9.png": "/static/media/1639__0000s_0007_F_7 1.1144ddb9.png",
+    "static/media/66599253_640959749745687_3938820567636901888_n 1.94400663.png": "/static/media/66599253_640959749745687_3938820567636901888_n 1.94400663.png",
+    "static/media/67181558_355547431753327_5941956699895103488_n 1.517e2de1.png": "/static/media/67181558_355547431753327_5941956699895103488_n 1.517e2de1.png",
+    "static/media/67709394_338815390360088_2929716889045172224_n 1.41a35c58.png": "/static/media/67709394_338815390360088_2929716889045172224_n 1.41a35c58.png",
+    "static/media/Bez tytułu 1.198dd66b.png": "/static/media/Bez tytułu 1.198dd66b.png",
+    "static/media/Ellipse 7.eea0e309.png": "/static/media/Ellipse 7.eea0e309.png",
     "static/media/F_1.83a95e8a.svg": "/static/media/F_1.83a95e8a.svg",
     "static/media/F_2.9764c13d.svg": "/static/media/F_2.9764c13d.svg",
-    "static/media/bench-accounting-nfTA8pdaq9A-unsplash.ee76e3e8.jpg": "/static/media/bench-accounting-nfTA8pdaq9A-unsplash.ee76e3e8.jpg"
+    "static/media/IMG_20210520_151353 1.0a145f81.png": "/static/media/IMG_20210520_151353 1.0a145f81.png",
+    "static/media/XtNqCjT 1.7e7a6749.png": "/static/media/XtNqCjT 1.7e7a6749.png",
+    "static/media/Zrzut ekranu 2021-06-11 041047.ef056d82.png": "/static/media/Zrzut ekranu 2021-06-11 041047.ef056d82.png",
+    "static/media/Zrzut ekranu 2021-06-11 041339.312b4254.png": "/static/media/Zrzut ekranu 2021-06-11 041339.312b4254.png",
+    "static/media/assembless_logo.1bde0215.png": "/static/media/assembless_logo.1bde0215.png",
+    "static/media/bench-accounting-nfTA8pdaq9A-unsplash.ee76e3e8.jpg": "/static/media/bench-accounting-nfTA8pdaq9A-unsplash.ee76e3e8.jpg",
+    "static/media/flava_logo.3611fc18.png": "/static/media/flava_logo.3611fc18.png",
+    "static/media/givent_logo.195a2f88.png": "/static/media/givent_logo.195a2f88.png",
+    "static/media/macrents_logo.b884289c.png": "/static/media/macrents_logo.b884289c.png",
+    "static/media/morflax_things 1.5879a536.png": "/static/media/morflax_things 1.5879a536.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f4ede070.js",
-    "static/js/2.1fa27768.chunk.js",
-    "static/js/main.ccb4f99a.chunk.js"
+    "static/js/runtime-main.56e5b90a.js",
+    "static/js/2.9c97eb75.chunk.js",
+    "static/js/main.52474c89.chunk.js"
   ]
 }
