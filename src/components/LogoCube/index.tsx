@@ -19,12 +19,12 @@ const useStyles = makeStyles(styles);
  * @version 1.0.0
  * @author Assembless <support@assembless.tech>
  */
-const LogoCube = ({ className, style, src, alt }: LogoCubeProps): JSX.Element => {
+const LogoCube = ({ className, style, src, alt, color }: LogoCubeProps): JSX.Element => {
   const translated = useLittera(translations);
   const classes = useStyles();
 
   return (
-    <Box className={cx(classes.root, className)} style={style} display="flex" alignItems="center" justifyContent="center">
+    <Box className={cx(classes.root, className)} style={{...style, backgroundColor: color }} display="flex" alignItems="center" justifyContent="center">
       {
         src ?
           <img className={classes.image} src={src} alt={alt} />
@@ -43,6 +43,7 @@ type LogoCubeProps = {
   style?: React.CSSProperties;
   src?: string;
   alt: string;
+  color?: string
 };
 
 // Default props.

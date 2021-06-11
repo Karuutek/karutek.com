@@ -6,10 +6,16 @@ import cx from 'classnames';
 
 // Project scoped imports.
 import LogoCube from '../../../../components/LogoCube';
+import ProjectDialog from '../../../../components/ProjectDialog';
+import GiventLogo from '../../../../assets/givent_logo.png'
+import AssemblessLogo from '../../../../assets/assembless_logo.png'
+import MacrentsLogo from '../../../../assets/macrents_logo.png'
+import FlavaLogo from '../../../../assets/flava_logo.png'
 
 // Component scoped imports.
 import styles from './styles';
 import translations from './trans';
+import PhysiomedicaProject from './comps/physiomedica/';
 
 // Creates a hook for generating classnames.
 const useStyles = makeStyles(styles);
@@ -36,7 +42,11 @@ const Projects = ({ className, style }: ProjectsProps): JSX.Element => {
           <Box display="flex" justifyContent="center" width="100%">
             <Box display="flex" flexWrap="wrap" justifyContent="flex-start" width="100%">
               {
-                PROJECTS_LIST.map(project => <LogoCube src={project.logo} alt={project.name} key={project.id} />)
+                PROJECTS_LIST.map(project => 
+                    <ProjectDialog key={project.id + "_dialog"} trigger={<LogoCube src={project.logo} alt={project.name} color={project.color} key={project.id} />} project={project}>
+                      {project.comp}
+                    </ProjectDialog>
+                  )
               }
             </Box>
           </Box>
@@ -47,10 +57,12 @@ const Projects = ({ className, style }: ProjectsProps): JSX.Element => {
 };
 
 const PROJECTS_LIST = Object.freeze([
-  { id: "physiomedica", name: "Physiomedica", logo: "https://i.imgur.com/3XnTTLW.png" },
-  { id: "givent", name: "Givent" },
-  { id: "assembless", name: "Assembless" },
-  { id: "macrents", name: "MacRents" },
+  { id: "physiomedica",   name: "Physiomedica", color: "#80CBC4", logo: "https://i.imgur.com/3XnTTLW.png",    comp: <PhysiomedicaProject /> },
+  { id: "givent",         name: "Givent",       color: "#353642", logo: GiventLogo,                           comp: <PhysiomedicaProject /> },
+  { id: "assembless",     name: "Assembless",   color: "#000",    logo: AssemblessLogo,                       comp: <PhysiomedicaProject /> },
+  { id: "flava",          name: "Flava",        color: "#FFF",    logo: FlavaLogo,                            comp: <PhysiomedicaProject /> },
+  { id: "macrents",       name: "MacRents",     color: "#212121", logo: MacrentsLogo,                         comp: <PhysiomedicaProject /> },
+  { id: "smartoak",       name: "Smart Oak",    color: "#DADADA", logo: "https://source.unsplash.com/random", comp: <PhysiomedicaProject /> },
 ]);
 
 // Props the component accepts.
