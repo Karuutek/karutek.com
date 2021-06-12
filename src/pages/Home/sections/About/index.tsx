@@ -28,7 +28,7 @@ const About = ({ className, style }: AboutProps): JSX.Element => {
   const classes = useStyles(); 
 
   return (
-    <Box width="100%" position="relative">
+    <Box width="100%" position="relative" id="about">
     <Container maxWidth="md" style={{position: "relative", zIndex: 7}}>
 
       <Box className={cx(classes.root, className)} style={style}>

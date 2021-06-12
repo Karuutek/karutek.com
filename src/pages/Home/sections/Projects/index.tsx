@@ -32,7 +32,7 @@ const Projects = ({ className, style }: ProjectsProps): JSX.Element => {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="md" className={cx(classes.root, className)} style={style}>
+    <Container id="projects" maxWidth="md" className={cx(classes.root, className)} style={style}>
       <Box display="flex" alignItems="center" justifyContent="center" width="100%" height="100%">
 
         <Box>

@@ -10,6 +10,11 @@ const translations = {
       en_US: "Send",
       de_DE: "Senden",
       pl_PL: "Wyślij"
+    },
+    recaptchaRequired: {
+      en_US: "Are you a robot? Recaptcha verification required.",
+      de_DE: "Are you a robot? Recaptcha verification required.",
+      pl_PL: "Are you a robot? Recaptcha verification required."  
     }
   };
   

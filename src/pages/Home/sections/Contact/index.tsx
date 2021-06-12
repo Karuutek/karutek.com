@@ -37,7 +37,10 @@ const Contact = ({ className, style }: ContactProps): JSX.Element => {
   }
 
   const onSubmit = async (data: { name: string, email: string, message: string }) => {
-    if(!recaptcha) return;
+    if(!recaptcha) {
+      setErrors(translated.recaptchaRequired);
+      return;
+    }
 
     setSuccess(false);
     setErrors("");
@@ -68,7 +71,7 @@ const Contact = ({ className, style }: ContactProps): JSX.Element => {
   };
 
   return (
-    <Box width="100%" position="relative">
+    <Box width="100%" position="relative" id="contact">
     <Container maxWidth="md" style={{position: "relative", zIndex: 7}}>
       <Box className={cx(classes.root, className)} style={style}>
         <Box width="100%">
