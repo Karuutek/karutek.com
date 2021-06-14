@@ -47,19 +47,6 @@ const AssemblessProject = ({ className, style }: AssemblessProjectProps): JSX.El
           </Typography>
         </Box>
       </Box>
-
-      <Box component="section">
-        <Typography variant="h4" gutterBottom>macrents.pl</Typography>
-
-        <Typography style={{width: "70%"}}>
-          {translated.text04}
-        </Typography>
-
-        <Box display="flex" flexWrap="wrap" marginTop="52px" marginBottom="32px">
-          <img src={image03} alt="macrents.pl preview" className={classes.previewImage} />
-          <img src={image04} alt="macrents.pl preview beta" className={classes.previewImage} />
-        </Box>
-      </Box>
     </Box>
   );
 };
