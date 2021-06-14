@@ -2,9 +2,9 @@
 
 const translations = {
     title: {
-      en_US: `Projects`,
-      de_DE: `Projekte`,
-      pl_PL: `Projekty`,
+      en_US: `Example`,
+      de_DE: `Beispiel`,
+      pl_PL: `Przykład`,
     },
   };
   

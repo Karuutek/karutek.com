@@ -3,8 +3,7 @@ import { createStyles } from "@material-ui/core/styles";
 
 export default ((theme: any) => createStyles({
     root: {
-        height: "100vh",
-        paddingTop: 55,
+        minHeight: "100vh",
         position: "relative"
     },
     logo: {
@@ -15,6 +14,14 @@ export default ((theme: any) => createStyles({
         color: theme.palette.primary.main,
         textAlign: "center",
         marginBottom: 25,
+        paddingTop: theme.spacing(4)
+    },
+    bigBtn: { 
+        padding: "13px 46px", 
+        fontSize: "22px", 
+        lineHeight: 1.3, 
+        marginTop: 85, 
+        borderRadius: "100px" 
     },
 
 

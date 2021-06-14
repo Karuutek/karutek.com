@@ -20,7 +20,7 @@ function App() {
     <>
       <CssBaseline />
       <ThemeProvider theme={theme}>
-        <LitteraProvider initialLocale="en_US" locales={LOCALES}>
+        <LitteraProvider initialLocale="en_US" detectLocale locales={LOCALES}>
           <Router>
             <Routes />
           </Router>

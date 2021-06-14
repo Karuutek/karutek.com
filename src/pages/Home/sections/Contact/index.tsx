@@ -1,6 +1,6 @@
 // Deps scoped imports.
 import React, { useState } from 'react';
-import { makeStyles, Box, Typography, TextField, Button, Container } from '@material-ui/core';
+import { makeStyles, Box, Typography, TextField, Button, Container, Hidden } from '@material-ui/core';
 import { useLittera } from '@assembless/react-littera';
 import cx from 'classnames';
 import { useForm } from "react-hook-form";
@@ -81,14 +81,14 @@ const Contact = ({ className, style }: ContactProps): JSX.Element => {
 
           <form onSubmit={handleSubmit(onSubmit)} style={{ width: "100%" }}>
             <Box flexWrap="wrap" display="flex" justifyContent="space-between" width="100%">
-              <Box width="60%">
-                <TextField type="text" variant="outlined" color="primary" fullWidth label="Name" {...register("name")} required />
+              <Box className={classes.fieldsWrapper}>
+                <TextField type="text" variant="outlined" color="primary" fullWidth label={translated.name} {...register("name")} required />
                 <br />
                 <br />
-                <TextField type="email" variant="outlined" color="primary" fullWidth label="E-Mail" {...register("email")} required />
+                <TextField type="email" variant="outlined" color="primary" fullWidth label={translated.email} {...register("email")} required />
                 <br />
                 <br />
-                <TextField type="text" variant="outlined" color="primary" fullWidth label="Message" inputProps={{ style: { minHeight: 140 } }} multiline {...register("message")} required />
+                <TextField type="text" variant="outlined" color="primary" fullWidth label={translated.message} inputProps={{ style: { minHeight: 140 } }} multiline {...register("message")} required />
               </Box>
 
               <Box className={classes.contactCard}>
@@ -105,7 +105,7 @@ const Contact = ({ className, style }: ContactProps): JSX.Element => {
 
               {success && <>
                 <br /><br />
-                <Alert severity="success" >Thanks for getting in touch with me. I will answer as soon as I can.</Alert></>}
+                <Alert severity="success" >{translated.success}</Alert></>}
             </Box>
 
             <br />
@@ -121,7 +121,9 @@ const Contact = ({ className, style }: ContactProps): JSX.Element => {
         </Box>
       </Box>
     </Container>
-    <img src={flowerImage01} style={{ position: 'absolute', right: 0, top: -150, zIndex: 5 }} />
+    <Hidden mdDown>
+      <img src={flowerImage01} style={{ position: 'absolute', right: 0, top: -150, zIndex: 5 }} />
+    </Hidden>
     </Box>
   );
 };

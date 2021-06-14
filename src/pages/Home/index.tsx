@@ -14,6 +14,7 @@ import Hero from './sections/Hero/';
 import About from './sections/About/';
 import Projects from './sections/Projects/';
 import Contact from './sections/Contact/';
+import Footer from './sections/Footer/';
 
 /**
  * Home component
@@ -26,10 +27,11 @@ const Home = (props: ComponentProps) => {
     const classes = useStyles();
 
     return <Box className={cx(classes.root, props.className)} style={props.style}>
-        <Hero className={classes.spacing} style={{paddingTop: 0}} />
+        <Hero className={classes.spacing} style={{marginTop: '0'}} />
         <About className={classes.spacing} />
         <Projects className={classes.spacing} />
         <Contact className={classes.spacing} />
+        <Footer />
     </Box>
 }
 

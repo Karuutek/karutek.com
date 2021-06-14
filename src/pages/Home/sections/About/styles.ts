@@ -4,7 +4,7 @@ import { createStyles, Theme } from '@material-ui/core/styles';
 const styles = (theme: Theme) =>
   createStyles({
     root: {
-      height: "100vh",
+      minHeight: "100vh",
       width: "100%",
       display: "flex",
       alignItems: "center",

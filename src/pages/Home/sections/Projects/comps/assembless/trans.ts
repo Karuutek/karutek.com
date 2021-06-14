@@ -1,0 +1,26 @@
+// Here we define translations for the component.
+
+const translations = {
+  text01: {
+    en_US: `In Assembless I have been working since November 2020.Since then, together with a group of programmers, we carry out projects commissioned to us.The first one was designed and then creating the first prototype of the main page of our organization.`,
+    de_DE: `In der Montage bin ich seit November 2020 gearbeitet.Seitdem führen wir zusammen mit einer Gruppe von Programmierern Projekte durch, die uns in Betrieb genommen haben.Der erste wurde entworfen und erstellt dann den ersten Prototyp der Hauptseite unserer Organisation.`,
+    pl_PL: `W Assembless pracuję od listopada 2020 roku. Od tamtej pory wspólnie z grupą programistów realizujemy zlecone nam projekty. Pierwszym z nich było zaprojektowanie, a następnie utworzenie pierwszego prototypu głównej strony naszej organizacji.`,
+  },
+  text02: {
+    en_US: `The first project, which is the right main page of the Assembless organization, was already established in November.With its creation, we have inspired the existing logo.These were two cubes skeletons in contact with each other.The project was to look at work, technically.We decided on a black background, white and blue accents, and "PT mono" typography in white, which is stylized for the monospace font.We have enriched a 3D object, showing a globe that symbolizes, openness to people from around the world.`,
+    de_DE: `Das erste Projekt, das die richtige Hauptseite der montierlosen Organisation ist, wurde bereits im November etabliert.Mit seiner Erstellung haben wir das vorhandene Logo inspiriert.Dies waren zwei Würfel-Skelette in Kontakt miteinander.Das Projekt bestand darin, die Arbeit technisch anzusehen.Wir entschieden uns für einen schwarzen Hintergrund, weiße und blaue Akzente und "PT Mono" -Typographie in Weiß, das für die MONOSPACE-Schriftart stilisiert ist.Wir haben ein 3D-Objekt angereichert, das einen Globus zeigt, der symbolisiert, Offenheit für Menschen aus der ganzen Welt.`,
+    pl_PL: `Pierwszy projekt, który jest dziś właściwą stroną główną organizacji Assembless, powstał już w listopadzie. Przy jego tworzeniu  zainspirowaliśmy się istniejącym już wtedy, niewykorzystanym logo. Były to dwa szkielety sześcianów stykające się ze sobą kątami. Projekt wobec tego miał wyglądać roboczo, technicznie. Zdecydowaliśmy się na czarne tło, białe oraz niebieskie akcenty, oraz typografię ,,PT Mono” w kolorze białym , która jest stylizowana na czcionkę monospace. Hero wzbogaciliśmy o obiekt 3D, przedstawiający kulę ziemską, która symbolizuje, otwartość na ludzi z całego świata.`,
+  },
+  text03: {
+    en_US: `We are currently during the Development of the new home page Assembless, which has been redesigned by us from scratch to improve branding.For a new viewpoint, we decided to go in a brighter shade of gray and excluded the blue color.Our target was to create a prototype worth recommending a business and technical side of Assembless.We came to the conclusion that Mono font looks too technically so we replaced her "Open Sans", which gave a more friendly business appearance.`,
+    de_DE: `Wir sind derzeit während der Entwicklung der neuen Startseite Montage, die von uns von Grund auf neu gestaltet wurde, um das Branding zu verbessern.Für einen neuen Sicht haben wir uns entschieden, in einen helleren Grauzügen zu gehen und die blaue Farbe auszuschließen.Unser Ziel bestand darin, einen Prototyp zu erstellen, der eine geschäftliche und technische Seite von montierloser Seite empfiehlt.Wir kamen zu dem Schluss, dass Mono-Schrift zu technisch aussieht, so dass wir ihre "offenen Sans" ersetzt haben, was ein freundlichereres Geschäftsauftritt ergab.`,
+    pl_PL: `Aktualnie jesteśmy w trakcie developmentu nowej strony głównej Assembless, która została przez nas przeprojektowana od podstaw na rzecz poprawienia brandingu. Dla nowej odsłony zdecydowaliśmy się pójść w jaśniejsze odcienie szarości oraz wykluczyliśmy kolor niebieski. Naszym targetem było stworzenie prototypu godnie reprezentującego biznesową jak i techniczną stronę Assembless. Doszliśmy do wniosku, że czcionka mono prezentuje się zbyt technicznie więc zastąpiliśmy ją “Open Sans”, która nadała bardziej przyjaznego biznesowi wyglądu.`,
+  },
+  text04: {
+    en_US: `Together with the Assembless team, we have created a website of the Macrents Rentes in Poznań.We wanted to create something that attracts the attention of quality, a luxurious design and introduces into the world of modern automotive industry, while easy, easy to use and maintain a minimalist appearance.`,
+    de_DE: `Zusammen mit dem montierlosen Team haben wir eine Website der Macrents Miete in Poznań erstellt.Wir wollten etwas schaffen, das die Aufmerksamkeit von Qualität, ein luxuriöses Design anzieht, und führt in die Welt der modernen Automobilindustrie ein, während Sie einfach, einfach zu bedienen und ein minimalistisches Erscheinungsbild aufrechterhalten.`,
+    pl_PL: `Wspólnie z teamem Assembless stworzyliśmy stronę internetową wypożyczalni aut MacRents w Poznaniu. Chcieliśmy stworzyć coś, co przyciąga uwagę jakością, luksusowym designem i wprowadza w świat nowoczesnej motoryzacji, przy jednoczesnym, łatwym użytkowaniu i zachowaniu minimalistycznego wyglądu.`,
+  },
+};
+
+export default translations;

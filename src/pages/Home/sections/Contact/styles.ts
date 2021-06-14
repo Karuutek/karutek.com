@@ -4,7 +4,7 @@ import { createStyles, Theme } from '@material-ui/core/styles';
 const styles = (theme: Theme) =>
   createStyles({
     root: {
-      height: "100vh",
+      minHeight: "100vh",
       display: "flex",
       alignItems: "center",
       justifyContent: "center"
@@ -13,11 +13,20 @@ const styles = (theme: Theme) =>
       marginBottom: theme.spacing(4),
     },
     contactCard: { alignSelf: "flex-end", paddingLeft: "10%", backgroundColor: theme.palette.background.default, borderRadius: theme.shape.borderRadius, padding: theme.spacing(2) },
+    fieldsWrapper: {
+      width: "60%"
+    },
 
     /** Mobile view */
     [theme.breakpoints.down("sm")]: {
       title: {
         marginBottom: theme.spacing(2),
+      },
+      fieldsWrapper: {
+        width: "100%"
+      },
+      contactCard: {
+        width: "100%",
       }
     }
   });

@@ -4,27 +4,21 @@ import { createStyles, Theme } from '@material-ui/core/styles';
 const styles = (theme: Theme) =>
   createStyles({
     root: {
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundColor: theme.palette.background.default,
-      minHeight: "100vh",
+      width: "100%",
+      paddingTop: theme.spacing(2),
+      paddingBottom: theme.spacing(2),
     },
     title: {
-      marginBottom: "54px",
-      textAlign: "center",
+      marginBottom: 0
     },
-    projectListWrapper: {
-
+    inputLabel: {
+      color: theme.palette.primary.main
     },
 
     /** Mobile view */
     [theme.breakpoints.down("sm")]: {
       title: {
         marginBottom: theme.spacing(2),
-      },
-      projectListWrapper: {
-        justifyContent: "center"
       }
     }
   });

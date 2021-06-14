@@ -46,28 +46,28 @@ const About = ({ className, style }: AboutProps): JSX.Element => {
 
                 <Box position="absolute" top="50%" left="50%" className={classes.floatingCardsContainer}>
                   <FloatingCard 
-                    title="Hobby" 
-                    content="I’m greatly determined to achieve my goals. Nothing can stop me." 
+                    title={translated.title01}
+                    content={translated.content01}
                     style={{top: "60%", left: "-65%", width: "400px"}} />
 
                   <FloatingCard 
-                    title="Art & Design" 
-                    content="Art and design is in my spectrum of interest far as I can remember." 
+                    title={translated.title02}
+                    content={translated.content02}
                     style={{top: "75%", left: "78%", width: "400px"}} />
 
                   <FloatingCard 
-                    title="UI/UX Design" 
-                    content="Art and design is in my spectrum of interest far as I can remember." 
+                    title={translated.title03}
+                    content={translated.content03}
                     style={{top: "25%", left: "-48%", width: "400px"}} />
 
                   <FloatingCard 
-                    title="Determination" 
-                    content="I’m greatly determined to achieve my goals. Nothing can stop me." 
-                    style={{top: "5%", left: "70%", width: "400px"}} />
+                    title={translated.title04}
+                    content={translated.content04}
+                    style={{top: "0%", left: "70%", width: "400px"}} />
 
                   <FloatingCard 
-                    title="Recreation" 
-                    content="I’m greatly determined to achieve my goals. Nothing can stop me." 
+                    title={translated.title05}
+                    content={translated.content05}
                     style={{top: "25%", left: "90%", width: "400px"}} />
 
                 </Box>
@@ -77,32 +77,34 @@ const About = ({ className, style }: AboutProps): JSX.Element => {
 
           <Hidden lgUp>
             <FloatingCard 
-              title="Word of the Day" 
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu pulvinar dolor. Phasellus mollis maximus mauris a convallis." 
+              title={translated.title01}
+              content={translated.content01}
               style={{position: "relative", width: "100%", marginBottom: 12}} />
             <FloatingCard 
-              title="Word of the Day" 
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu pulvinar dolor. Phasellus mollis maximus mauris a convallis." 
+              title={translated.title02}
+              content={translated.content02}
               style={{position: "relative", width: "100%", marginBottom: 12}} />
             <FloatingCard 
-              title="Word of the Day" 
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu pulvinar dolor. Phasellus mollis maximus mauris a convallis." 
+              title={translated.title03}
+              content={translated.content03}
               style={{position: "relative", width: "100%", marginBottom: 12}} />
             <FloatingCard 
-              title="Word of the Day" 
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu pulvinar dolor. Phasellus mollis maximus mauris a convallis." 
+              title={translated.title04}
+              content={translated.content04}
               style={{position: "relative", width: "100%", marginBottom: 12}} />
             <FloatingCard 
-              title="Word of the Day" 
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu pulvinar dolor. Phasellus mollis maximus mauris a convallis." 
+              title={translated.title05}
+              content={translated.content05}
               style={{position: "relative", width: "100%", marginBottom: 12}} />
           </Hidden>
         </Box>
       </Box>
     </Container>
 
-    <img src={flowerImage02} style={{ position: 'absolute', right: 0, top: 0, zIndex: 5 }} />
-    <img src={flowerImage01} style={{ position: 'absolute', left: 0, top: 350, zIndex: 5 }} />
+    <Hidden mdDown>
+      <img src={flowerImage02} style={{ position: 'absolute', right: 0, top: 0, zIndex: 5 }} />
+      <img src={flowerImage01} style={{ position: 'absolute', left: 0, top: 350, zIndex: 5 }} />
+    </Hidden>
     </Box>
   );
 };

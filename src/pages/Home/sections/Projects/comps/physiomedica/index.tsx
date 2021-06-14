@@ -63,6 +63,8 @@ const PhysiomedicaProject = ({ className, style }: PhysiomedicaProjectProps): JS
         
       </Box>
 
+      <Typography variant="h6" style={{marginBottom: "3rem"}}>{translated.section05}</Typography>
+
       <Box display="flex" justifyContent="space-between" flexWrap="wrap" style={{padding: "19% 0 3.5% ​0"}}>
         <img src={image07} style={{width: "100%", height: "auto"}} alt="physiomedica page" />
       </Box>

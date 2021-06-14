@@ -54,7 +54,7 @@ const ProjectDialog = ({ className, style, children, trigger, project }: Project
             <Box display="flex" justifyContent="space-between" height="240px">
               <div>
                 <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
-                  <CloseIcon />
+                  <CloseIcon style={{color: project.contrastColor}} />
                 </IconButton>
               </div>
 
@@ -67,7 +67,7 @@ const ProjectDialog = ({ className, style, children, trigger, project }: Project
           </Container>
         </Box>
         
-        <Container style={{ marginTop: "8%" }}>
+        <Container>
           {children}
         </Container>
       </Dialog>
@@ -81,7 +81,7 @@ type ProjectDialogProps = {
   style?: React.CSSProperties;
   children: JSX.Element | JSX.Element[];
   trigger: JSX.Element;
-  project: { id: string, name: string, logo?: string, color: string };
+  project: { id: string, name: string, logo?: string, color: string, contrastColor: string };
 };
 
 // Default props.

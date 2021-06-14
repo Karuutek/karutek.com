@@ -17,6 +17,8 @@ import styles from './styles';
 import translations from './trans';
 import PhysiomedicaProject from './comps/physiomedica/';
 import GiventProject from './comps/givent/';
+import FlavaProject from './comps/flava/';
+import AssemblessProject from './comps/assembless/';
 
 // Creates a hook for generating classnames.
 const useStyles = makeStyles(styles);
@@ -41,7 +43,7 @@ const Projects = ({ className, style }: ProjectsProps): JSX.Element => {
           </Typography>
 
           <Box display="flex" justifyContent="center" width="100%">
-            <Box display="flex" flexWrap="wrap" justifyContent="flex-start" width="100%">
+            <Box display="flex" flexWrap="wrap" justifyContent="flex-start" width="100%" className={classes.projectListWrapper}>
               {
                 PROJECTS_LIST.map(project => 
                     <ProjectDialog key={project.id + "_dialog"} trigger={<LogoCube src={project.logo} alt={project.name} color={project.color} key={project.id} />} project={project}>
@@ -58,12 +60,12 @@ const Projects = ({ className, style }: ProjectsProps): JSX.Element => {
 };
 
 const PROJECTS_LIST = Object.freeze([
-  { id: "physiomedica",   name: "Physiomedica", color: "#80CBC4", logo: "https://i.imgur.com/3XnTTLW.png",    comp: <PhysiomedicaProject /> },
-  { id: "givent",         name: "Givent",       color: "#353642", logo: GiventLogo,                           comp: <GiventProject /> },
-  { id: "assembless",     name: "Assembless",   color: "#000",    logo: AssemblessLogo,                       comp: <PhysiomedicaProject /> },
-  { id: "flava",          name: "Flava",        color: "#FFF",    logo: FlavaLogo,                            comp: <PhysiomedicaProject /> },
-  { id: "macrents",       name: "MacRents",     color: "#212121", logo: MacrentsLogo,                         comp: <PhysiomedicaProject /> },
-  { id: "smartoak",       name: "Smart Oak",    color: "#DADADA", logo: "https://source.unsplash.com/random", comp: <PhysiomedicaProject /> },
+  { id: "physiomedica",   name: "Physiomedica", color: "#80CBC4", logo: "https://i.imgur.com/3XnTTLW.png",    comp: <PhysiomedicaProject />,  contrastColor: "#FFF" },
+  { id: "givent",         name: "Givent",       color: "#353642", logo: GiventLogo,                           comp: <GiventProject />,        contrastColor: "#FFF" },
+  { id: "assembless",     name: "Assembless",   color: "#000",    logo: AssemblessLogo,                       comp: <AssemblessProject />,    contrastColor: "#FFF" },
+  { id: "flava",          name: "Flava",        color: "#FFF",    logo: FlavaLogo,                            comp: <FlavaProject />,         contrastColor: "#000" },
+  // { id: "macrents",       name: "MacRents",     color: "#212121", logo: MacrentsLogo,                         comp: <PhysiomedicaProject />,  contrastColor: "#FFF" },
+  // { id: "smartoak",       name: "Smart Oak",    color: "#DADADA", logo: "https://source.unsplash.com/random", comp: <PhysiomedicaProject />,  contrastColor: "#FFF" },
 ]);
 
 // Props the component accepts.

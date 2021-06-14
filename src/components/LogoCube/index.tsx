@@ -1,6 +1,6 @@
 // Deps scoped imports.
 import React from 'react';
-import { makeStyles, Box, Typography } from '@material-ui/core';
+import { makeStyles, Box, Typography, ButtonBase } from '@material-ui/core';
 import { useLittera } from '@assembless/react-littera';
 import cx from 'classnames';
 
@@ -24,16 +24,18 @@ const LogoCube = ({ className, style, src, alt, color }: LogoCubeProps): JSX.Ele
   const classes = useStyles();
 
   return (
-    <Box className={cx(classes.root, className)} style={{...style, backgroundColor: color }} display="flex" alignItems="center" justifyContent="center">
-      {
-        src ?
-          <img className={classes.image} src={src} alt={alt} />
-          : 
-          <Typography variant="h5" color="primary" className={classes.title}>
-            {alt}
-        </Typography>
-      }
-    </Box>
+    <ButtonBase style={{ margin: "8px" }}> 
+      <Box className={cx(classes.root, className)} style={{ ...style, backgroundColor: color }} display="flex" alignItems="center" justifyContent="center">
+        {
+          src ?
+            <img className={classes.image} src={src} alt={alt} draggable={false} />
+            : 
+            <Typography variant="h5" color="primary" className={classes.title}>
+              {alt}
+          </Typography>
+        }
+      </Box>
+    </ButtonBase>
   );
 };
 

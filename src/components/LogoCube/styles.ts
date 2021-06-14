@@ -9,15 +9,10 @@ const styles = (theme: Theme) =>
       height: theme.breakpoints.width("sm") / 2.2,
       position: "relative",
       overflow: "hidden",
-      margin: theme.spacing(1),
       cursor: "pointer",
-      opacity: 0.85,
+      maxWidth: "100vw",
 
-      transition: "opacity 155ms ease",
-
-      "&:hover": {
-        opacity: 1
-      }
+      transition: "filter 155ms ease",
     },
     title: {
       margin: 0
@@ -28,7 +23,8 @@ const styles = (theme: Theme) =>
       position: "absolute",
       top: "50%",
       left: "50%",
-      transform: "translate(-50%, -50%)"
+      transform: "translate(-50%, -50%)",
+      userSelect: "none"
     },
 
     /** Mobile view */
