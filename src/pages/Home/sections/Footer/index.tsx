@@ -1,6 +1,6 @@
 // Deps scoped imports.
 import React from 'react';
-import { makeStyles, Box, Typography, Container, FormControl, MenuItem, Select, InputLabel } from '@material-ui/core';
+import { makeStyles, Box, Typography, Container, FormControl, MenuItem, Select, InputLabel, Hidden } from '@material-ui/core';
 import { useLittera, useLitteraMethods } from '@assembless/react-littera';
 import cx from 'classnames';
 
@@ -39,20 +39,22 @@ const Footer = ({ className, style }: FooterProps) => {
           {translated.cpr}
         </Typography>
 
-        <FormControl variant="outlined">
-          <InputLabel id="demo-simple-select-outlined-label" className={classes.inputLabel}>{translated.language}</InputLabel>
-          <Select
-            labelId="demo-simple-select-outlined-label"
-            id="demo-simple-select-outlined"
-            value={locale}
-            onChange={changeLocale}
-            label="Language"
-          >
-            <MenuItem value={"pl_PL"}>Polski</MenuItem>
-            <MenuItem value={"de_DE"}>Deutsch</MenuItem>
-            <MenuItem value={"en_US"}>English</MenuItem>
-          </Select>
-        </FormControl>
+        <Hidden mdUp>
+          <FormControl variant="outlined">
+            <InputLabel id="demo-simple-select-outlined-label" className={classes.inputLabel}>{translated.language}</InputLabel>
+            <Select
+              labelId="demo-simple-select-outlined-label"
+              id="demo-simple-select-outlined"
+              value={locale}
+              onChange={changeLocale}
+              label="Language"
+            >
+              <MenuItem value={"pl_PL"}>Polski</MenuItem>
+              <MenuItem value={"de_DE"}>Deutsch</MenuItem>
+              <MenuItem value={"en_US"}>English</MenuItem>
+            </Select>
+          </FormControl>
+        </Hidden>
       </Box>
     </Container>
   );

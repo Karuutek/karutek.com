@@ -1,7 +1,7 @@
 // Deps scoped imports.
 import React, {useState} from "react";
 import { makeStyles, Box, Typography, Button, Container, Hidden } from "@material-ui/core";
-import { useLittera } from "@assembless/react-littera";
+import { useLittera, useLitteraMethods } from "@assembless/react-littera";
 import cx from "classnames";
 
 // Project scoped imports.
@@ -20,6 +20,7 @@ import translations from "./trans";
  */
 const Hero = (props: HeroProps) => {
     const translated = useLittera(translations);
+    const { locale, setLocale } = useLitteraMethods();
     const classes = useStyles();
 
     const scrollIntoAnchor = (id: string) => () => {
@@ -29,6 +30,13 @@ const Hero = (props: HeroProps) => {
     }
 
     return <>
+        <Hidden mdDown>
+            <Box display="flex" alignItems="center" justifyContent="flex-start" position="absolute" top="15px" left="20px">
+                <LangButton setLocale={() => setLocale("en_US")} isActive={locale === "en_US"}>EN</LangButton>
+                <LangButton setLocale={() => setLocale("pl_PL")} isActive={locale === "pl_PL"}>PL</LangButton>
+                <LangButton setLocale={() => setLocale("de_DE")} isActive={locale === "de_DE"}>DE</LangButton>
+            </Box>
+        </Hidden>
         <Container maxWidth="md">
             <Box className={cx(classes.root, props.className)} style={props.style} display="flex" flexDirection="column" justifyContent="space-between">
                 <Box style={{height: "160px"}}>
@@ -78,7 +86,11 @@ const useStyles = makeStyles(styles);
 type HeroProps = {
     className?: string;
     style?: React.CSSProperties
-}
+};
 
 // Time to export! 🚚
 export default Hero;
+
+const LangButton = (props: { setLocale: () => void; isActive: boolean, children: any }) => {
+    return <Typography onClick={props.setLocale} style={{ opacity: props.isActive ? 1 : 0.7, marginRight: "8px", textDecoration: props.isActive ? "initial" : "underline", cursor: "pointer" }}>{props.children}</Typography>
+}
