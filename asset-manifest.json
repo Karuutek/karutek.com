@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.a980bae3.chunk.js",
-    "main.js.map": "/static/js/main.a980bae3.chunk.js.map",
+    "main.js": "/static/js/main.ae039bb0.chunk.js",
+    "main.js.map": "/static/js/main.ae039bb0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.229d7416.js",
     "runtime-main.js.map": "/static/js/runtime-main.229d7416.js.map",
-    "static/js/2.a6dac5f9.chunk.js": "/static/js/2.a6dac5f9.chunk.js",
-    "static/js/2.a6dac5f9.chunk.js.map": "/static/js/2.a6dac5f9.chunk.js.map",
+    "static/js/2.143f41d2.chunk.js": "/static/js/2.143f41d2.chunk.js",
+    "static/js/2.143f41d2.chunk.js.map": "/static/js/2.143f41d2.chunk.js.map",
     "static/js/3.d89af913.chunk.js": "/static/js/3.d89af913.chunk.js",
     "static/js/3.d89af913.chunk.js.map": "/static/js/3.d89af913.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.a6dac5f9.chunk.js.LICENSE.txt": "/static/js/2.a6dac5f9.chunk.js.LICENSE.txt",
+    "static/js/2.143f41d2.chunk.js.LICENSE.txt": "/static/js/2.143f41d2.chunk.js.LICENSE.txt",
     "static/media/106993419_4489704961099888_1937973486739651086_n-removebg-preview.162f0a5d.png": "/static/media/106993419_4489704961099888_1937973486739651086_n-removebg-preview.162f0a5d.png",
     "static/media/1639__0000s_0002_F_2 1.436b6626.png": "/static/media/1639__0000s_0002_F_2 1.436b6626.png",
     "static/media/1639__0000s_0003_F_3 1.dbbefba5.png": "/static/media/1639__0000s_0003_F_3 1.dbbefba5.png",
@@ -26,17 +26,21 @@
     "static/media/Zrzut ekranu 2021-06-11 041047.ef056d82.png": "/static/media/Zrzut ekranu 2021-06-11 041047.ef056d82.png",
     "static/media/Zrzut ekranu 2021-06-11 041339.312b4254.png": "/static/media/Zrzut ekranu 2021-06-11 041339.312b4254.png",
     "static/media/Zrzut ekranu 2021-06-14 031155.84433eda.png": "/static/media/Zrzut ekranu 2021-06-14 031155.84433eda.png",
-    "static/media/Zrzut ekranu 2021-06-14 032733.57dd5f6b.png": "/static/media/Zrzut ekranu 2021-06-14 032733.57dd5f6b.png",
     "static/media/assembless_logo.1bde0215.png": "/static/media/assembless_logo.1bde0215.png",
     "static/media/bench-accounting-nfTA8pdaq9A-unsplash.ee76e3e8.jpg": "/static/media/bench-accounting-nfTA8pdaq9A-unsplash.ee76e3e8.jpg",
     "static/media/flava_logo.3611fc18.png": "/static/media/flava_logo.3611fc18.png",
     "static/media/givent_logo.195a2f88.png": "/static/media/givent_logo.195a2f88.png",
+    "static/media/macrents 2.a4c24dbf.png": "/static/media/macrents 2.a4c24dbf.png",
+    "static/media/macrents garfika 1.b91ba931.png": "/static/media/macrents garfika 1.b91ba931.png",
+    "static/media/macrents grafika2 1.89f32820.png": "/static/media/macrents grafika2 1.89f32820.png",
+    "static/media/macrents_logo.b884289c.png": "/static/media/macrents_logo.b884289c.png",
     "static/media/morflax_things 1.5879a536.png": "/static/media/morflax_things 1.5879a536.png",
-    "static/media/out.090fcc82.gif": "/static/media/out.090fcc82.gif"
+    "static/media/out.090fcc82.gif": "/static/media/out.090fcc82.gif",
+    "static/media/screencapture-drfr0st-github-io-macrents-pl-2021-06-14-20_44_15 1.ecf68142.png": "/static/media/screencapture-drfr0st-github-io-macrents-pl-2021-06-14-20_44_15 1.ecf68142.png"
   },
   "entrypoints": [
     "static/js/runtime-main.229d7416.js",
-    "static/js/2.a6dac5f9.chunk.js",
-    "static/js/main.a980bae3.chunk.js"
+    "static/js/2.143f41d2.chunk.js",
+    "static/js/main.ae039bb0.chunk.js"
   ]
 }
