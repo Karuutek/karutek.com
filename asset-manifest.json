@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.ae039bb0.chunk.js",
-    "main.js.map": "/static/js/main.ae039bb0.chunk.js.map",
+    "main.js": "/static/js/main.da60fdc6.chunk.js",
+    "main.js.map": "/static/js/main.da60fdc6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.229d7416.js",
     "runtime-main.js.map": "/static/js/runtime-main.229d7416.js.map",
     "static/js/2.143f41d2.chunk.js": "/static/js/2.143f41d2.chunk.js",
@@ -28,6 +28,7 @@
     "static/media/Zrzut ekranu 2021-06-14 031155.84433eda.png": "/static/media/Zrzut ekranu 2021-06-14 031155.84433eda.png",
     "static/media/assembless_logo.1bde0215.png": "/static/media/assembless_logo.1bde0215.png",
     "static/media/bench-accounting-nfTA8pdaq9A-unsplash.ee76e3e8.jpg": "/static/media/bench-accounting-nfTA8pdaq9A-unsplash.ee76e3e8.jpg",
+    "static/media/dsadafasf.fe8ef3c3.png": "/static/media/dsadafasf.fe8ef3c3.png",
     "static/media/flava_logo.3611fc18.png": "/static/media/flava_logo.3611fc18.png",
     "static/media/givent_logo.195a2f88.png": "/static/media/givent_logo.195a2f88.png",
     "static/media/macrents 2.a4c24dbf.png": "/static/media/macrents 2.a4c24dbf.png",
@@ -41,6 +42,6 @@
   "entrypoints": [
     "static/js/runtime-main.229d7416.js",
     "static/js/2.143f41d2.chunk.js",
-    "static/js/main.ae039bb0.chunk.js"
+    "static/js/main.da60fdc6.chunk.js"
   ]
 }
