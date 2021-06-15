@@ -5,10 +5,8 @@ import { useLittera } from '@assembless/react-littera';
 import cx from 'classnames';
 
 // Project scoped imports.
-import image01 from '../../../../../../assets/Zrzut ekranu 2021-06-14 031155.png';
+import image01 from '../../../../../../assets/dsadafasf.png';
 import image02 from '../../../../../../assets/Zrzut ekranu 2021-06-14 031155.png';
-import image03 from '../../../../../../assets/Zrzut ekranu 2021-06-14 032733.png';
-import image04 from '../../../../../../assets/Zrzut ekranu 2021-06-14 032733.png';
 
 // Component scoped imports.
 import styles from './styles';
