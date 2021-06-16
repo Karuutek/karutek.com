@@ -30,28 +30,28 @@ const MacrentsProject = ({ className, style }: MacrentsProjectProps): JSX.Elemen
   return (
     <Box className={cx(classes.root, className)} style={style}>
       <Box >
-        <Typography className={classes.text + " " + classes.shortedText} style={{margin: "4rem 0"}}>
+        <Typography variant="h6" className={classes.text + " " + classes.shortedText} style={{margin: "4rem 0"}}>
           {translated.text01}
         </Typography>
         <img src={image01} className={classes.img} />
       </Box>
 
       <Box>
-        <Typography className={classes.text + " " + classes.shortedText} style={{ margin: "4rem 0 4rem auto" }}>
+        <Typography variant="h6" className={classes.text + " " + classes.shortedText} style={{ margin: "4rem 0 4rem auto" }}>
           {translated.text02}
         </Typography>
         <img src={image02} className={classes.img} />
       </Box>
 
       <Box >
-        <Typography className={classes.text + " " + classes.shortedText} style={{margin: "4rem 0"}}>
+        <Typography variant="h6" className={classes.text + " " + classes.shortedText} style={{margin: "4rem 0"}}>
           {translated.text03}
         </Typography>
         <img src={image03} className={classes.img} />
       </Box>
 
       <Box >
-        <Typography className={classes.text + " " + classes.shortedText} style={{margin: "4rem 0"}}>
+        <Typography variant="h6" className={classes.text + " " + classes.shortedText} style={{margin: "4rem 0"}}>
           {translated.text04}
         </Typography>
         <img src={image04} className={classes.img} />

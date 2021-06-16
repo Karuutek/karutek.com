@@ -4,7 +4,6 @@ import { createStyles, Theme } from '@material-ui/core/styles';
 const styles = (theme: Theme) =>
   createStyles({
     root: {
-      backgroundColor: theme.palette.background.default,
     },
     title: {
       marginBottom: theme.spacing(4),

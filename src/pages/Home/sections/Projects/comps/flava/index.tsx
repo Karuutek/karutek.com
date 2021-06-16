@@ -27,6 +27,7 @@ const FlavaProject = ({ className, style }: FlavaProjectProps): JSX.Element => {
   return (
     <Box className={cx(classes.root, className)} style={style}>
       <img className={classes.video} src={introGif} alt="Introduction gif" />
+      <Typography variant="h3" style={{margin: "5rem 0", textAlign: "center"}}>{translated.more}</Typography>
     </Box>
   );
 };

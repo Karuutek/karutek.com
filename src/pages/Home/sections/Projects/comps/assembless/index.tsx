@@ -6,7 +6,7 @@ import cx from 'classnames';
 
 // Project scoped imports.
 import image01 from '../../../../../../assets/dsadafasf.png';
-import image02 from '../../../../../../assets/Zrzut ekranu 2021-06-14 031155.png';
+import image02 from '../../../../../../assets/Untitled-2-Recovered.png';
 
 // Component scoped imports.
 import styles from './styles';
@@ -28,19 +28,19 @@ const AssemblessProject = ({ className, style }: AssemblessProjectProps): JSX.El
   return (
     <Box className={cx(classes.root, className)} style={style}>
       <Box component="section">
-        <Typography style={{width: "70%"}}>
+        <Typography variant="h6" style={{width: "70%"}}>
           {translated.text01}
         </Typography>
 
         <Typography variant="h4" style={{marginTop: "52px"}}>assembless.tech</Typography>
 
         <Box display="flex" flexWrap="wrap" marginTop="8px" marginBottom="52px">
-          <Typography style={{width: "38.5%", marginRight: "1.5%"}}>
+          <Typography variant="h6" style={{width: "38.5%", marginRight: "1.5%"}}>
             {translated.text02}
           </Typography>
           <img src={image01} alt="assembless.tech preview" className={classes.previewImage} />
           <img src={image02} alt="assembless.tech preview beta" className={classes.previewImage} />
-          <Typography style={{width: "38.5%", marginLeft: "1.5%"}}>
+          <Typography variant="h6" style={{width: "38.5%", marginLeft: "1.5%"}}>
             {translated.text03}
           </Typography>
         </Box>
