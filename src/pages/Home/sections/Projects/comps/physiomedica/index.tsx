@@ -70,7 +70,7 @@ const PhysiomedicaProject = ({ className, style }: PhysiomedicaProjectProps): JS
       </Box>
 
       <Box width="100%" display="flex" justifyContent="center" alignItems="center" height="120px">
-      <Button style={{backgroundColor: "#80CBC4"}} href="https://physiomedica.pl/" variant="contained" size="large">{translated.visit}</Button>
+      <Button style={{backgroundColor: "#80CBC4"}} href="https://physiomedica.eu/" variant="contained" size="large">{translated.visit}</Button>
       </Box>
 
     </Box>
